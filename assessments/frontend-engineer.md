@@ -62,3 +62,19 @@ Your application needs a lightweight, standardized toast notification system for
 3. **Hosted Demo (Optional)**: A live deployment (e.g., Vercel/Netlify) showcasing the toast system in action; desirable but not mandatory.
 
 ---
+
+## Submission Guidelines
+
+- **Deadline**:
+    - As provided in the E-Mail.
+
+- **Submission Method**:
+    - Please send your completed assessment to: [glsnxt-engineering-leads@teams.gls-global.com](mailto:glsnxt-engineering-leads@teams.gls-global.com).
+
+---
+
+## Final Notes
+
+There is no single “correct” solution to this assessment. This is intended to understand your approach to solving the problem. We value clarity, justification of choices, and adherence to best practices. Focus on detailing your thought process and explaining trade-offs if any. 
+
+Good luck, and we look forward to reviewing your solution!
