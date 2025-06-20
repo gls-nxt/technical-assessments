@@ -6,7 +6,17 @@
 ## Overview  
 Define your approach and automate key flows of the live GLS parcel-shipping journey. Treat your submission as an outline and code “sketch” – detailed reasoning will happen in our interview.
 
----
+## System under test:
+- Parcel Configuration:  
+  `https://www.gls-pakete.de/en/private-customers/parcel-shipping/parcel-configuration`  
+- Cart: reached by clicking **Add to shopping cart**  
+- Checkout:  
+  `https://www.gls-pakete.de/en/private-customers/parcel-shipping/checkout`
+  
+## Assumptions
+- This is live production—any "Buy now" will redirect to a real gateway (do not complete payment)
+- Use valid-format but fake data (e.g., "4111 1111 1111 1111") to trigger validation
+- No login required
 
 ## Deliverables (ZIP or GitHub link)
 
@@ -19,51 +29,13 @@ Define your approach and automate key flows of the live GLS parcel-shipping jour
 3. **README** – brief setup & run commands  
 4. **AI Disclosure** – list any AI tools (ChatGPT, Copilot, etc.) you used
 
----
-
-## 1. Scope & Flows Under Test
-
-**Base URLs (production):**  
-- Parcel Configuration:  
-  `https://www.gls-pakete.de/en/private-customers/parcel-shipping/parcel-configuration`  
-- Cart: reached by clicking **Add to shopping cart**  
-- Checkout:  
-  `https://www.gls-pakete.de/en/private-customers/parcel-shipping/checkout`
-
-### Candidate-Defined Critical Flows 
-
-*Candidates should fill in their own scenarios*
-
----
-
-## 2. Test-Case Table (example structure)
-
-| ID    | Title                           | Preconditions        | Steps (outline)                | Expected Outcome  |
-|-------|---------------------------------|----------------------|--------------------------------|-------------------|
-| TC-01 | …                               | …                    | …                              | …                 |
-| TC-02 | …                               | …                    | …                              | …                 |
-| TC-03 | …                               | …                    | …                              | …                 |
-
-*Candidates should fill in their own scenarios*
-
----
-
-## 3. Smoke Checklist (example structure)
-
-- Parcel Configuration page loads successfully
-- ...
-  
-*Candidates should fill in their own scenarios*
-
----
-
 ## Evaluation Criteria
 
-- **Clarity & Organization:** 
-- **Coverage & Depth:**
-- **Maintainability:** 
-- **Reliability:**
-- **Pragmatism:**
+- Clarity & Organization
+- Coverage & Depth
+- Maintainability
+- Reliability
+- Pragmatism
 
 ---
 
