@@ -1,101 +1,70 @@
-# QA Engineer - Take-Home Test
+**Note (Draft for Interview Preparation)**  
+> This take-home is a sketch to prepare for our discussion—you don’t need to send polished prose or full explanations. Please share bullet-point outlines, minimal code files, and any AI tools you used; we’ll dive into details live during the interview.
 
-## Overview
+# QA Engineer – Take-Home Test (2–3 Hours)
 
-You will verify key aspects of the live GLS parcel-shipping flow by defining test cases and delivering an automated suite. Total effort: ~2–3 hours.
+## Overview  
+Define your approach and automate key flows of the live GLS parcel-shipping journey. Treat your submission as an outline and code “sketch” – detailed reasoning will happen in our interview.
 
 ---
 
 ## Deliverables (ZIP or GitHub link)
 
-- **Test Plan Outline** (Markdown or PDF), including:
-  - **Scope & Flows Under Test**
-  - **Structured Test-Case Table** (happy and negative paths)
-  - **Smoke Checklist** (5 items)
-- **Automation Suite** (source files) in your preferred language/framework (Kotlin, Java, or TypeScript recommended)
-  - Identify and automate at least two critical scenarios of your choosing
-  - Include a README with instructions to install dependencies and execute tests (e.g., `./gradlew test`, `mvn test`, or `npm test`)
+1. **Test Plan Outline** (Markdown or PDF) – **bullet points only**, no long essays:  
+   - Scope & Flows Under Test  
+   - Test-Case Table (up to six scenarios: 3 happy, 3 negative)  
+   - Smoke Checklist (5 core checks)  
+2. **Automation Suite** (source files) in your preferred framework/language (Kotlin, Java, or TypeScript):  
+   - Code to automate at least two scenarios you choose
+3. **README** – brief setup & run commands  
+4. **AI Disclosure** – list any AI tools (ChatGPT, Copilot, etc.) you used
 
 ---
 
-## Scope & Flows Under Test
+## 1. Scope & Flows Under Test
 
-**Base URLs (production):**
+**Base URLs (production):**  
+- Parcel Configuration:  
+  `https://www.gls-pakete.de/en/private-customers/parcel-shipping/parcel-configuration`  
+- Cart: reached by clicking **Add to shopping cart**  
+- Checkout:  
+  `https://www.gls-pakete.de/en/private-customers/parcel-shipping/checkout`
 
-- **Parcel Configuration:**
-  - `https://www.gls-pakete.de/en/private-customers/parcel-shipping/parcel-configuration`
-- **Cart:**
-  - Reached by clicking "Add to shopping cart"
-- **Checkout:**
-  - `https://www.gls-pakete.de/en/private-customers/parcel-shipping/checkout`
+### Candidate-Defined Critical Flows 
 
-### Assumptions
-
-- This is live production—any "Buy now" will redirect to a real gateway (do not complete payment)
-- Use valid-format but fake data (e.g., "4111 1111 1111 1111") to trigger validation
-- No login required
-
-### 1. Flows to Cover (candidate defines critical pieces)
-
-**Parcel Configuration → Cart:**
-- Select a parcel size
-- Enter dimensions/weight
-- Fill sender & recipient addresses
-- Choose service options
-- Click **Add to shopping cart**
-- Verify Cart contents and **To check out** navigation
-
-**Checkout → Payment Gateway Redirect:**
-- On Checkout, fill Sender fields (First Name *, Last Name *, Street *, House Number *, Postal Code *, City *, Email *)
-- Optionally apply a discount code
-- Select payment method (Card or PayPal)
-- Click **Buy now**
-- Confirm redirection (PayPal site or card validation)
+*Candidates should fill in their own scenarios*
 
 ---
 
-## 2. Test-Case Table (candidate to create)
+## 2. Test-Case Table (example structure)
 
-Provide a table of at least six scenarios (three "happy" and three "negative"):
+| ID    | Title                           | Preconditions        | Steps (outline)                | Expected Outcome  |
+|-------|---------------------------------|----------------------|--------------------------------|-------------------|
+| TC-01 | …                               | …                    | …                              | …                 |
+| TC-02 | …                               | …                    | …                              | …                 |
+| TC-03 | …                               | …                    | …                              | …                 |
 
-| Title | Preconditions | Steps (automatable) | Expected Result |
-|-------|---------------|---------------------|-----------------|
-| ...   | ...           | ...                 | ...             |
-
-*Candidates should fill in actual titles, steps, and expected results*
+*Candidates should fill in their own scenarios*
 
 ---
 
-## 3. Smoke Checklist (5 Items)
+## 3. Smoke Checklist (example structure)
 
-List five core checks your suite (or manual sanity run) would cover, for example:
-
-- Parcel Configuration page loads correctly
-- Required-field validation appears when "Weight" is blank
+- Parcel Configuration page loads successfully
 - ...
-
----
-
-## 4. Automation Requirements (≈1.5 hr)
-
-- **Language/Framework:** Choose any (preferably Kotlin, Java, or TypeScript) with Playwright, Selenium, Cypress, or similar
-- **README / Instructions:**
-  - List prerequisites (e.g., JDK, Node.js)
-  - Provide setup commands (`./gradlew build`, `npm install`)
-  - Provide test execution commands (`./gradlew test`, `npx playwright test`)
+  
+*Candidates should fill in their own scenarios*
 
 ---
 
 ## Evaluation Criteria
 
-- **Clarity & Organization:** Well-structured plan and code
-- **Coverage & Depth:** Relevant positive/negative paths automated
-- **Maintainability:** Modular page objects or helper functions
-- **Reliability:** Tests pass consistently without flakiness
-- **Pragmatism:** Scoped to ~2–3 hours, focusing on high-value checks
+- **Clarity & Organization:** 
+- **Coverage & Depth:**
+- **Maintainability:** 
+- **Reliability:**
+- **Pragmatism:**
 
 ---
 
-Good luck! We look forward to reviewing your submission.
-
-Would you like me to generate the qa-engineer.md file for you now and match the filename and style of your other files exactly (I see you already uploaded qa-engineer.md — I can overwrite or update it as needed)? Just confirm and I'll prepare it! 🚀
+**Good luck!** We’ll review your outline & code, then dig deeper together in the interview
