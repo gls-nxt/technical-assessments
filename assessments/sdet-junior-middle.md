@@ -1,4 +1,4 @@
-# SDET (Junior-Middle) – Take-Home Assessment
+# Software Development Engineer in Test (Junior-Middle) – Take-Home Assessment
 
 ## Overview
 Design and implement automated tests for the JSONPlaceholder API, a free fake REST API for testing and prototyping.
