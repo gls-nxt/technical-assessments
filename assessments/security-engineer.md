@@ -1,18 +1,18 @@
 # Technical Assessment – Senior Product Security Engineer (Device & Cloud)
 
 ## Overview
-This challenge assesses your ability to design and reason about the **security of IoT edge devices** (parcel lockers) that interact with cloud services.  
-The exercise is not about writing extensive code — it’s about demonstrating **secure design principles**, **risk identification**, and **practical mitigations** across device, network, and cloud layers.
+This challenge assesses your ability to design and reason about the **security of smart connected devices** that interact with cloud services.
+The exercise focuses on applying **security-by-design principles**, identifying threats, and demonstrating **practical mitigations** across device, network, and cloud layers.
 
 You can use any format you prefer (Markdown, PDF, or text) for your submission.
 
 ---
 
 ## Scenario
-Your company operates a network of **connected parcel lockers** distributed across multiple countries.  
-Each locker runs a small **edge computing node** (based on Linux) that:
-- Exposes an **HMI (touchscreen interface)** for users to interact with
-- Connects to various sensors and actuators (door locks, barcode scanners, payment terminals)
+Your company develops a line of **smart connected devices** deployed globally.  
+Each device runs a small **edge computing node** (based on Linux) that:
+- Exposes a local **user interface** (e.g., touchscreen or web interface)
+- Connects to sensors and actuators (for example, temperature sensors, relays, or payment terminals)
 - Communicates with a **cloud platform** via MQTT and HTTPS APIs
 - Receives **over-the-air (OTA)** updates using a container-based update mechanism
 
@@ -43,7 +43,7 @@ Design a **secure end-to-end architecture** diagram or description that covers:
 - **Secrets management** (how credentials are stored and rotated on-device)
 - **Monitoring & logging** (how anomalies or breaches are detected and reported)
 
-You can describe this textually or with a simple diagram.
+You can describe this textually or include a simple diagram.
 
 ---
 
@@ -59,17 +59,17 @@ Write a short section (~1 page) describing:
 Please submit:
 - A short document or `README.md` covering your architecture, threat model, and governance answers.
 
-Expected effort: **4–6 hours** total.
+Expected effort: **4-6 hours** total.  
 We’re not looking for production-ready solutions - we’re looking for your **thought process and security design reasoning**.
 
 ---
 
 ## Bonus Discussion Topics (for follow-up interview)
-- Device identity rotation and decommissioning
-- Secure remote logging and telemetry privacy
-- Designing for compliance with **EU Cyber Resilience Act** and **UK PSTI**
-- Hardware Root of Trust integration (TPM, secure enclave)
+- Device identity rotation and decommissioning.
+- Secure remote logging and telemetry privacy.
+- Designing for compliance with **EU Cyber Resilience Act** and **UK PSTI**.
+- Hardware Root of Trust integration (TPM, secure enclave).
 
 ---
 
-**Good luck — we look forward to seeing how you approach securing our next-generation parcel locker platform!**
+**Good luck — we look forward to seeing how you approach securing our next-generation smart connected devices!**
