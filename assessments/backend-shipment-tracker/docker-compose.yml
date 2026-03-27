@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  mock-upstream:
+    build:
+      context: ./mock-upstream
+    ports:
+      - "8081:8081"
