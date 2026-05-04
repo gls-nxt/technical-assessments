@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+upstream:
+  websocket-url: ws://localhost:8081/tracking
+  shipment-api-base-url: http://localhost:8081
+
+logging:
+  level:
+    com.gls.tracking: INFO
